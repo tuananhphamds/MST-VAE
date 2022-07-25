@@ -5,7 +5,7 @@ MST-VAE is an unsupervised learning approach for anomaly detection in multivaria
 Main techniques in this paper:
 - Multi-scale module: short-scale and long-scale module
 - We adopted Beta-VAE for training the model
-- MCMC is applied to remove achieve better representations while detecting anomalies
+- MCMC is applied to achieve better representations while detecting anomalies
 
 ## How to use the repository
 ### Clone the repository
