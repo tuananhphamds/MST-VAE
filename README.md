@@ -12,3 +12,10 @@ Main techniques in this paper:
 ### Clone the repository
 <pre><code>git clone https://github.com/tuananhphamds/MST-VAE.git && cd MST-VAE
 </code></pre>
+
+### Prepare data
+In this study, we use five public datasets: ASD (Application Server Dataset), SMD (Server Machine Dataset), PSM (Pooled Server Metrics), SWaT (Secure Water Treatment), and WADI (Water Distribution).
+
+ASD, SMD, PSM can be refered in data/processed folder.
+
+SWaT, WADI should be requested from https://itrust.sutd.edu.sg/itrust-labs_datasets/dataset_info/
