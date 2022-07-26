@@ -1,0 +1,47 @@
+{
+	"SMD":{
+		"max_epoch": 40,
+		"initial_lr": 0.001,
+		"lr_anneal_epoch_freq": 30,
+		"valid_portion": 0.3,
+		"window_length": 100,
+		"output_shape": [25, 50, 100],
+		"z_dim": 13
+	},
+	"ASD":{
+		"max_epoch": 40,
+		"initial_lr": 0.001,
+		"lr_anneal_epoch_freq": 30,
+		"valid_portion": 0.3,
+		"window_length": 100,
+		"output_shape": [25, 50, 100],
+		"z_dim": 13
+	},
+	"PSM":{
+		"max_epoch": 20,
+		"initial_lr": 0.0005,
+		"lr_anneal_epoch_freq": 5,
+		"valid_portion": 0.1,
+		"window_length": 30,
+		"output_shape": [15, 30],
+		"z_dim": 8
+	},
+	"SWaT":{
+		"max_epoch": 20,
+		"initial_lr": 0.0004,
+		"lr_anneal_epoch_freq": 10,
+		"valid_portion": 0.1,
+		"window_length": 30,
+		"output_shape": [15, 30],
+		"z_dim": 8
+	},
+	"WADI":{
+		"max_epoch": 15,
+		"initial_lr": 0.0002,
+		"lr_anneal_epoch_freq": 5,
+		"valid_portion": 0.1,
+		"window_length": 30,
+		"output_shape": [15, 30],
+		"z_dim": 8
+	}
+}

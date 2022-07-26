@@ -1,0 +1,74 @@
+---------------------------------------DATA INFO-------------------------------
+Dataset 1: ASD (train: 102331, test: 51840)
+- omi-1,
+- omi-2,
+- omi-3,
+- omi-4,
+- omi-5,
+- omi-6,
+- omi-7,
+- omi-8,
+- omi-9,
+- omi-10,
+- omi-11,
+- omi-12
+
+Dataset 2: SMD (train: 304168, test: 304174)
+- machine-1-1,
+- machine-1-6,
+- machine-1-7,
+- machine-2-1,
+- machine-2-2,
+- machine-2-7,
+- machine-2-8,
+- machine-3-3,
+- machine-3-4,
+- machine-3-6,
+- machine-3-8,
+- machine-3-11
+
+Dataset 3: PSM (Ebay) (train: 132481, test: 87841)
+
+Dataset 4: SWaT (train: 496800, test: 449919)
+
+Dataset 5: WADI (train: 530171, test: 172801)
+
+-------------------------------------------------------------------------------
+All datasets have not been normalized. Each dataset contains three files:
+- <Name_of_dataset>_train.pkl: train data
+- <Name_of_dataset>_test.pkl: test data
+- <Name_of_dataset>_test_label.pkl: test label
+-------------------------------------------------------------------------------
+
+
+-----------------------------------TRAIN CONFIG--------------------------------
+SMD and ASD
+    max_epoch = 40
+    initial_lr = 0.001
+    lr_anneal_epoch_freq = 30
+    valid_portion = 0.3
+
+SWaT
+    max_epoch = 20
+    initial_lr = 0.0004
+    lr_anneal_epoch_freq = 10
+    valid_portion = 0.1
+
+WADI
+    max_epoch = 15
+    initial_lr = 0.0002
+    lr_anneal_epoch_freq = 5
+    valid_portion = 0.1
+
+PSM
+    max_epoch = 40
+    initial_lr = 0.0005
+    lr_anneal_epoch_freq = 10
+    valid_portion = 0.1
+
+---------------------------------Result files-------------------------------
+Folder results/run_experiment_<TIME_STAMP>/analysis_results
+- full_recons_window_probs.npz: 	reconstruction probability 
+- recons_plotting_data.npz: 		reconstruction input 
+- test_score.pkl			sum of reconstruction probability
+- train_score.pkl			sum of reconstruction probability
