@@ -104,3 +104,6 @@ elif dataset == '<Name_of_dataset>':
 
 ### Check experiment results
 Evaluation results are stored as JSON files in ``MST-VAE/experiment_results/results``
+
+### Cite this paper
+If this code is useful for your research, please cite this paper: https://doi.org/10.3390/app121910078
