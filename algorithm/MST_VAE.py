@@ -22,20 +22,15 @@ class RNNCellType(str, Enum):
 
 class ModelConfig(mltk.Config):
     x_dim: int = -1
-    z_dim: int = 3
     u_dim: int = 1
     window_length = 100
     output_shape: List[int] = [25, 50, 100]
-    # output_shape: List[int] = [15, 30]
     z_dim: int = 13
     l2_reg = 0.0001
     unified_px_logstd = False
 
     logstd_min = -5.
     logstd_max = 2.
-    use_prior_flow = False  # If True, use RealNVP prior flow to enhance the representation of p(z).
-    connect_qz = True
-    connect_pz = True
 
 class MTSAD(VarScopeObject):
 
